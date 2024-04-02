@@ -8,7 +8,7 @@ The **debuggable** attribute defines whether the application can be debugged or 
 
 If the application can be debugged then it can be leverged by an attacker to gather plenty of information.
 
-_**Android applications that are not in the production state are expected to have this attribute set to true to assist the developers however before the actual release of the application this tag should be set to false.**_
+_**Android applications that are not in production state are expected to have this attribute set to true to assist the developers however before the actual release of the application this tag should be set to false.**_
 
 ```
 1	<application
@@ -66,7 +66,7 @@ Depending of the functionality, an application can launch a service, perform an 
 	• Content Providers
 	• Broadcast Receivers
  
-_**Activities, Services, Content Providers and Broadcast Receivers can all be exported. Therefore all of them they should be reviewed that they don’t perform any sensitive action and that they are protected by appropriate permissions as otherwise information could be exposed to malicious third parties.**_
+_**Activities, Services, Content Providers and Broadcast Receivers can all be exported. Therefore all of them should be reviewed so they don’t perform any sensitive action and that they are protected by appropriate permissions as otherwise information could be exposed to malicious third parties.**_
 
 The following image demonstrates how a broadcast receiver is defined in the manifest file:
 ```
